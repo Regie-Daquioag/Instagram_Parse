@@ -63,7 +63,7 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 ## Notes
 
 Describe any challenges encountered while building the app.
-I add trouble with the segues stating that someone was trying to run when another action has not been completed and understanding parse and the query. Also that import Parse did not want to work even though it should.
+I had trouble with the segues stating that someone was trying to run when another action has not been completed and understanding parse and the query. Also that import Parse did not want to work even though it should.
 
 ## License
 
