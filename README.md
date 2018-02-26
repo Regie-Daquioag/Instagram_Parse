@@ -18,7 +18,7 @@ The following **required** functionality is completed:
 
 The following **stretch** features are implemented:
 
-- [ ] Style the login page to look like the real Instagram login page (+1pt)
+- [x] Style the login page to look like the real Instagram login page (+1pt)
 - [ ] Style the feed to look like the real Instagram feed (+1pt)
 - [ ] User can use a tab bar to switch between all "Instagram" posts and posts published only by the user. AKA, tabs for Home Feed and Profile (+2pt)
 - [ ] Add a custom camera using the CameraManager library (+1pt)
@@ -42,14 +42,14 @@ Somethings that I wanted to improve was to make it look slightly more like insta
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. Can some example what parse is and why we didnt use the Instagram API?
+2. I like to know more about segue ways becuase my segues was one main reason I was struggling. 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='instagramGif.gif' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -63,6 +63,7 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 ## Notes
 
 Describe any challenges encountered while building the app.
+I add trouble with the segues stating that someone was trying to run when another action has not been completed and understanding parse and the query. Also that import Parse did not want to work even though it should.
 
 ## License
 
