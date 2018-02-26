@@ -11,12 +11,22 @@ import Parse
 
 class LoginViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
-    
     @IBOutlet weak var passwordField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        usernameField.placeholder = "Username"
+        passwordField.placeholder = "Password"
+        
+        let backgroundImage = UIImage.init(named: "background1")
+        let backgroundImageView = UIImageView.init(frame: self.view.frame)
+        
+        backgroundImageView.image = backgroundImage
+        backgroundImageView.contentMode = .scaleAspectFill
+        
+        self.view.insertSubview(backgroundImageView, at: 0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +39,7 @@ class LoginViewController: UIViewController {
             if(user != nil){
                 print("You are logged in")
             }
-            self.performSegue(withIdentifier: "loginSeque", sender: nil)
+            self.performSegue(withIdentifier: "loginSegue", sender: nil)
         }
     }
     
@@ -42,7 +52,7 @@ class LoginViewController: UIViewController {
         newUser.signUpInBackground { (success: Bool, error: Error?) in
             if(success){
                 print("User registered successfully")
-                self.performSegue(withIdentifier: "loginSeque", sender: nil)
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }else{
                 print(error?.localizedDescription)
                 if (error?._code == 202){
@@ -51,6 +61,8 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    
+    
     /*
     // MARK: - Navigation
 

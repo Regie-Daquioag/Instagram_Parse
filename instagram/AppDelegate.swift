@@ -13,7 +13,21 @@ import Parse
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+//    func logOut() {
+//        // Logout the current user
+//        PFUser.logOutInBackground(block: { (error) in
+//            if let error = error {
+//                print(error.localizedDescription)
+//            } else {
+//                print("Successful loggout")
+//                // Load and show the login view controller
+//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+//                self.window?.rootViewController = loginViewController
+//            }
+//        })
+//    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -24,9 +38,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://sheltered-citadel-68072.herokuapp.com/parse"
             })
         )
+//        // check if user is logged in.
+//        if PFUser.current() != nil {
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            // view controller currently being set in Storyboard as default will be overridden
+////            window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "HomeFeedViewController")
+//        }
+//
+//        NotificationCenter.default.addObserver(forName: Notification.Name("didLogout"), object: nil, queue: OperationQueue.main) { (Notification) in
+//            print("Logout notification received")
+//            // TODO: Logout the User
+//            // TODO: Load and show the login view controller
+//        }
         return true
     }
-
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -48,6 +74,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
 
 
 }

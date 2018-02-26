@@ -1,20 +1,20 @@
-# Project 4 - *Name of App Here*
+# Project 4 - *Instagram Parse*
 
 **Name of your app** is a photo sharing app using Parse as its backend.
 
-Time spent: **X** hours spent in total
+Time spent: **16** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [ ] User can sign up to create a new account using Parse authentication (+1pt)
-- [ ] User can log in and log out of his or her account (+1pt)
-- [ ] The current signed in user is persisted across app restarts (+1pt)
-- [ ] User can take a photo, add a caption, and post it to "Instagram" (+2pt)
-- [ ] User can view the last 20 posts submitted to "Instagram" (+2pt)
-- [ ] User can pull to refresh the last 20 posts submitted to "Instagram" (+1pt)
-- [ ] User can tap a post to view post details, including timestamp and caption (+2pt)
+- [x] User can sign up to create a new account using Parse authentication (+1pt)
+- [x] User can log in and log out of his or her account (+1pt)
+- [x] The current signed in user is persisted across app restarts (+1pt)
+- [x] User can take a photo, add a caption, and post it to "Instagram" (+2pt)
+- [x] User can view the last 20 posts submitted to "Instagram" (+2pt)
+- [x] User can pull to refresh the last 20 posts submitted to "Instagram" (+1pt)
+- [x] User can tap a post to view post details, including timestamp and caption (+2pt)
 
 The following **stretch** features are implemented:
 
@@ -38,6 +38,7 @@ The following **stretch** features are implemented:
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
+Somethings that I wanted to improve was to make it look slightly more like instagram. I wanted to add the tabs on the bottom and add user pictures and the names on top of the posted image.
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
@@ -65,7 +66,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-Copyright [yyyy] [name of copyright owner]
+Copyright 2018 Regie Daquioag
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
